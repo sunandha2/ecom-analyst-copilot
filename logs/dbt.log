@@ -1,0 +1,12 @@
+[0m11:38:23.808119 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C2FD7B2D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C2FD08650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C2FC56050>]}
+
+
+============================== 11:38:23.841331 | f8570a2b-97c3-4fa0-86e8-b8767186b36e ==============================
+[0m11:38:23.841331 [info ] [MainThread]: Running with dbt=1.11.11
+[0m11:38:23.853635 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\sunandha\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt init dbt_project', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m11:38:23.944859 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\sunandha\.dbt
+[0m11:38:23.950857 [info ] [MainThread]: A project called dbt_project already exists here.
+[0m11:38:23.960634 [debug] [MainThread]: Command `dbt init` succeeded at 11:38:23.959660 after 0.31 seconds
+[0m11:38:23.961633 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C26F50BD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C2FD08510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C2FD08B90>]}
+[0m11:38:23.963691 [debug] [MainThread]: Flushing usage events
+[0m11:38:25.319192 [debug] [MainThread]: An error was encountered while trying to flush usage events

@@ -1,0 +1,1 @@
+{"_invocation_id": "caec758e-345c-4602-ac84-291ada4fcbfd", "linked": {"0": {"name": "model.dbt_project.weekly_metrics", "type": "model"}, "1": {"name": "model.dbt_project.stg_orders", "type": "model", "succ": [0, 2]}, "2": {"name": "model.dbt_project.weekly_top_category", "type": "model"}}}

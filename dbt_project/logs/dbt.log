@@ -1,0 +1,491 @@
+[0m11:41:38.936369 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027CFAF08AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027CFAF08190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027CFAE36A50>]}
+
+
+============================== 11:41:38.940578 | 5549fd67-55f1-44a0-bcb1-4ee96f35be04 ==============================
+[0m11:41:38.940578 [info ] [MainThread]: Running with dbt=1.11.11
+[0m11:41:38.941549 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\sunandha\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt debug', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m11:41:38.989601 [info ] [MainThread]: dbt version: 1.11.11
+[0m11:41:38.990600 [info ] [MainThread]: python version: 3.11.0
+[0m11:41:38.990600 [info ] [MainThread]: python path: C:\Users\sunandha\Downloads\gitdemo\ecom-analyst-copilot\venv\Scripts\python.exe
+[0m11:41:38.991660 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m11:41:39.102203 [info ] [MainThread]: Using profiles dir at C:\Users\sunandha\.dbt
+[0m11:41:39.104211 [info ] [MainThread]: Using profiles.yml file at C:\Users\sunandha\.dbt\profiles.yml
+[0m11:41:39.104211 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\sunandha\Downloads\gitdemo\ecom-analyst-copilot\dbt_project\dbt_project.yml
+[0m11:41:39.107346 [info ] [MainThread]: adapter type: duckdb
+[0m11:41:39.107346 [info ] [MainThread]: adapter version: 1.10.1
+[0m11:41:39.107346 [info ] [MainThread]: Configuration:
+[0m11:41:39.107346 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m11:41:39.112172 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m11:41:39.113848 [info ] [MainThread]: Required dependencies:
+[0m11:41:39.113848 [debug] [MainThread]: Executing "git --help"
+[0m11:41:39.166022 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m11:41:39.166022 [debug] [MainThread]: STDERR: "b''"
+[0m11:41:39.166022 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m11:41:39.166022 [info ] [MainThread]: Connection:
+[0m11:41:39.166022 [info ] [MainThread]:   database: ecom
+[0m11:41:39.166022 [info ] [MainThread]:   schema: main
+[0m11:41:39.166022 [info ] [MainThread]:   path: C:\Users\sunandha\Downloads\gitdemo\ecom-analyst-copilot\ecom.db
+[0m11:41:39.166022 [info ] [MainThread]:   config_options: None
+[0m11:41:39.166022 [info ] [MainThread]:   extensions: None
+[0m11:41:39.166022 [info ] [MainThread]:   settings: {}
+[0m11:41:39.166022 [info ] [MainThread]:   external_root: .
+[0m11:41:39.166022 [info ] [MainThread]:   use_credential_provider: None
+[0m11:41:39.175827 [info ] [MainThread]:   attach: None
+[0m11:41:39.176838 [info ] [MainThread]:   filesystems: None
+[0m11:41:39.176838 [info ] [MainThread]:   remote: None
+[0m11:41:39.177834 [info ] [MainThread]:   plugins: None
+[0m11:41:39.178833 [info ] [MainThread]:   disable_transactions: False
+[0m11:41:39.178833 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m11:41:39.653302 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m11:41:39.743508 [debug] [MainThread]: Using duckdb connection "debug"
+[0m11:41:39.744679 [debug] [MainThread]: On debug: select 1 as id
+[0m11:41:39.744679 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:41:39.894063 [debug] [MainThread]: DuckDB adapter: duckdb error: IO Error: Cannot open file "C:\Users\sunandha\Downloads\gitdemo\ecom-analyst-copilot\ecom.db": The process cannot access the file because it is being used by another process.
+
+File is already open in 
+C:\Users\sunandha\AppData\Local\Programs\Python\Python311\python.exe (PID 9792)
+[0m11:41:39.895068 [debug] [MainThread]: DuckDB adapter: Error running SQL: select 1 as id
+[0m11:41:39.896062 [debug] [MainThread]: DuckDB adapter: Rolling back transaction.
+[0m11:41:39.897253 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:41:40.023288 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m11:41:40.023288 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m11:41:40.023288 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\sunandha\Downloads\gitdemo\ecom-analyst-copilot\dbt_project\dbt_project.yml> not found
+
+[0m11:41:40.023288 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >IO Error: Cannot open file "C:\Users\sunandha\Downloads\gitdemo\ecom-analyst-copilot\ecom.db": The process cannot access the file because it is being used by another process.
+
+File is already open in 
+C:\Users\sunandha\AppData\Local\Programs\Python\Python311\python.exe (PID 9792)
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m11:41:40.029009 [debug] [MainThread]: Command `dbt debug` failed at 11:41:40.029009 after 1.19 seconds
+[0m11:41:40.029009 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m11:41:40.029009 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027CFAF974D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027CFB04F0D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027CFB03E490>]}
+[0m11:41:40.034077 [debug] [MainThread]: Flushing usage events
+[0m11:41:41.010210 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:46:40.900774 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022C172CFE90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022C17225D50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022C172CFC10>]}
+
+
+============================== 11:46:40.905321 | 7675781f-6c82-4761-9985-ff08c046952a ==============================
+[0m11:46:40.905321 [info ] [MainThread]: Running with dbt=1.11.11
+[0m11:46:40.906322 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\sunandha\\.dbt', 'invocation_command': 'dbt debug', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\sunandha\\Downloads\\gitdemo\\ecom-analyst-copilot\\dbt_project\\logs'}
+[0m11:46:40.924631 [info ] [MainThread]: dbt version: 1.11.11
+[0m11:46:40.925619 [info ] [MainThread]: python version: 3.11.0
+[0m11:46:40.926471 [info ] [MainThread]: python path: C:\Users\sunandha\Downloads\gitdemo\ecom-analyst-copilot\venv\Scripts\python.exe
+[0m11:46:40.926951 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m11:46:41.032164 [info ] [MainThread]: Using profiles dir at C:\Users\sunandha\.dbt
+[0m11:46:41.033269 [info ] [MainThread]: Using profiles.yml file at C:\Users\sunandha\.dbt\profiles.yml
+[0m11:46:41.034254 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\sunandha\Downloads\gitdemo\ecom-analyst-copilot\dbt_project\dbt_project.yml
+[0m11:46:41.037631 [info ] [MainThread]: adapter type: duckdb
+[0m11:46:41.038735 [info ] [MainThread]: adapter version: 1.10.1
+[0m11:46:41.140928 [info ] [MainThread]: Configuration:
+[0m11:46:41.141930 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m11:46:41.142924 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m11:46:41.143934 [info ] [MainThread]: Required dependencies:
+[0m11:46:41.143934 [debug] [MainThread]: Executing "git --help"
+[0m11:46:41.195171 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m11:46:41.195171 [debug] [MainThread]: STDERR: "b''"
+[0m11:46:41.196168 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m11:46:41.197169 [info ] [MainThread]: Connection:
+[0m11:46:41.198155 [info ] [MainThread]:   database: ecom
+[0m11:46:41.198155 [info ] [MainThread]:   schema: main
+[0m11:46:41.199159 [info ] [MainThread]:   path: C:\Users\sunandha\Downloads\gitdemo\ecom-analyst-copilot\ecom.db
+[0m11:46:41.199159 [info ] [MainThread]:   config_options: None
+[0m11:46:41.200174 [info ] [MainThread]:   extensions: None
+[0m11:46:41.201172 [info ] [MainThread]:   settings: {}
+[0m11:46:41.201172 [info ] [MainThread]:   external_root: .
+[0m11:46:41.202155 [info ] [MainThread]:   use_credential_provider: None
+[0m11:46:41.202155 [info ] [MainThread]:   attach: None
+[0m11:46:41.203170 [info ] [MainThread]:   filesystems: None
+[0m11:46:41.204358 [info ] [MainThread]:   remote: None
+[0m11:46:41.204358 [info ] [MainThread]:   plugins: None
+[0m11:46:41.205391 [info ] [MainThread]:   disable_transactions: False
+[0m11:46:41.206357 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m11:46:41.433805 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m11:46:41.552995 [debug] [MainThread]: Using duckdb connection "debug"
+[0m11:46:41.552995 [debug] [MainThread]: On debug: select 1 as id
+[0m11:46:41.554060 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:46:41.586224 [debug] [MainThread]: SQL status: OK in 0.033 seconds
+[0m11:46:41.587251 [debug] [MainThread]: On debug: Close
+[0m11:46:41.588301 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m11:46:41.589308 [info ] [MainThread]: [32mAll checks passed![0m
+[0m11:46:41.590372 [debug] [MainThread]: Command `dbt debug` succeeded at 11:46:41.590372 after 0.87 seconds
+[0m11:46:41.590372 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m11:46:41.591405 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022C1759F410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022C17543550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022C17AAA450>]}
+[0m11:46:41.591830 [debug] [MainThread]: Flushing usage events
+[0m11:46:42.875662 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:48:30.419724 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FDF82AD790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FDF81F5C90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FDF8342650>]}
+
+
+============================== 11:48:30.425559 | caec758e-345c-4602-ac84-291ada4fcbfd ==============================
+[0m11:48:30.425559 [info ] [MainThread]: Running with dbt=1.11.11
+[0m11:48:30.425559 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\sunandha\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt run', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\sunandha\\Downloads\\gitdemo\\ecom-analyst-copilot\\dbt_project\\logs'}
+[0m11:48:30.853681 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'caec758e-345c-4602-ac84-291ada4fcbfd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FDF81D7010>]}
+[0m11:48:30.919317 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'caec758e-345c-4602-ac84-291ada4fcbfd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FDF62AC090>]}
+[0m11:48:30.922320 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m11:48:31.252985 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m11:48:31.254987 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m11:48:31.255986 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'caec758e-345c-4602-ac84-291ada4fcbfd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FDF856FE50>]}
+[0m11:48:34.977588 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'caec758e-345c-4602-ac84-291ada4fcbfd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FDF887FAD0>]}
+[0m11:48:35.038249 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\sunandha\Downloads\gitdemo\ecom-analyst-copilot\dbt_project\target\manifest.json
+[0m11:48:35.042220 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\sunandha\Downloads\gitdemo\ecom-analyst-copilot\dbt_project\target\semantic_manifest.json
+[0m11:48:35.059900 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'caec758e-345c-4602-ac84-291ada4fcbfd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FDF89256D0>]}
+[0m11:48:35.060896 [info ] [MainThread]: Found 3 models, 485 macros
+[0m11:48:35.060896 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'caec758e-345c-4602-ac84-291ada4fcbfd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FDF8B7CB50>]}
+[0m11:48:35.063118 [info ] [MainThread]: 
+[0m11:48:35.064084 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m11:48:35.064084 [info ] [MainThread]: 
+[0m11:48:35.065179 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m11:48:35.069726 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_ecom'
+[0m11:48:35.136646 [debug] [ThreadPool]: Using duckdb connection "list_ecom"
+[0m11:48:35.137658 [debug] [ThreadPool]: On list_ecom: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_ecom"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"ecom"'
+    
+  
+  
+[0m11:48:35.137658 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:48:35.158133 [debug] [ThreadPool]: SQL status: OK in 0.020 seconds
+[0m11:48:35.159702 [debug] [ThreadPool]: On list_ecom: Close
+[0m11:48:35.160662 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ecom, now create_ecom_main)
+[0m11:48:35.161661 [debug] [ThreadPool]: Creating schema "database: "ecom"
+schema: "main"
+"
+[0m11:48:35.167797 [debug] [ThreadPool]: Using duckdb connection "create_ecom_main"
+[0m11:48:35.167797 [debug] [ThreadPool]: On create_ecom_main: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "create_ecom_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='ecom'
+        and type='sqlite'
+    
+  
+[0m11:48:35.168783 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:48:35.169784 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m11:48:35.170786 [debug] [ThreadPool]: Using duckdb connection "create_ecom_main"
+[0m11:48:35.171786 [debug] [ThreadPool]: On create_ecom_main: BEGIN
+[0m11:48:35.171786 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m11:48:35.172786 [debug] [ThreadPool]: Using duckdb connection "create_ecom_main"
+[0m11:48:35.172786 [debug] [ThreadPool]: On create_ecom_main: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "create_ecom_main"} */
+
+    
+    
+        create schema if not exists "ecom"."main"
+    
+[0m11:48:35.174297 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m11:48:35.175668 [debug] [ThreadPool]: On create_ecom_main: COMMIT
+[0m11:48:35.175668 [debug] [ThreadPool]: Using duckdb connection "create_ecom_main"
+[0m11:48:35.176780 [debug] [ThreadPool]: On create_ecom_main: COMMIT
+[0m11:48:35.176780 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m11:48:35.177788 [debug] [ThreadPool]: On create_ecom_main: Close
+[0m11:48:35.178787 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_ecom_main'
+[0m11:48:35.184799 [debug] [ThreadPool]: Using duckdb connection "list_ecom_main"
+[0m11:48:35.184799 [debug] [ThreadPool]: On list_ecom_main: BEGIN
+[0m11:48:35.185788 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:48:35.185788 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m11:48:35.186890 [debug] [ThreadPool]: Using duckdb connection "list_ecom_main"
+[0m11:48:35.186890 [debug] [ThreadPool]: On list_ecom_main: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "connection_name": "list_ecom_main"} */
+select
+      'ecom' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'ecom'
+  
+[0m11:48:35.194401 [debug] [ThreadPool]: SQL status: OK in 0.007 seconds
+[0m11:48:35.195401 [debug] [ThreadPool]: On list_ecom_main: ROLLBACK
+[0m11:48:35.211763 [debug] [ThreadPool]: Failed to rollback 'list_ecom_main'
+[0m11:48:35.212747 [debug] [ThreadPool]: On list_ecom_main: Close
+[0m11:48:35.213745 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'caec758e-345c-4602-ac84-291ada4fcbfd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FDF8542C10>]}
+[0m11:48:35.214743 [debug] [MainThread]: Using duckdb connection "master"
+[0m11:48:35.215779 [debug] [MainThread]: On master: BEGIN
+[0m11:48:35.215779 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:48:35.216912 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m11:48:35.216912 [debug] [MainThread]: On master: COMMIT
+[0m11:48:35.217884 [debug] [MainThread]: Using duckdb connection "master"
+[0m11:48:35.218884 [debug] [MainThread]: On master: COMMIT
+[0m11:48:35.218884 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m11:48:35.219885 [debug] [MainThread]: On master: Close
+[0m11:48:35.248154 [debug] [Thread-1 (]: Began running node model.dbt_project.stg_orders
+[0m11:48:35.249154 [info ] [Thread-1 (]: 1 of 3 START sql view model main.stg_orders .................................... [RUN]
+[0m11:48:35.250152 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.dbt_project.stg_orders'
+[0m11:48:35.251151 [debug] [Thread-1 (]: Began compiling node model.dbt_project.stg_orders
+[0m11:48:35.257945 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project.stg_orders"
+[0m11:48:35.262384 [debug] [Thread-1 (]: Began executing node model.dbt_project.stg_orders
+[0m11:48:35.293796 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_project.stg_orders"
+[0m11:48:35.297930 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_project.stg_orders"
+[0m11:48:35.298953 [debug] [Thread-1 (]: On model.dbt_project.stg_orders: BEGIN
+[0m11:48:35.298953 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m11:48:35.299930 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:48:35.300943 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_project.stg_orders"
+[0m11:48:35.300943 [debug] [Thread-1 (]: On model.dbt_project.stg_orders: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.stg_orders"} */
+
+  
+  create view "ecom"."main"."stg_orders__dbt_tmp" as (
+    WITH source AS (
+    SELECT * FROM raw_orders
+),
+
+cleaned AS (
+    SELECT
+        order_id,
+        customer_id,
+        CAST(order_date AS DATE)                     AS order_date,
+        DATE_TRUNC('week', CAST(order_date AS DATE)) AS week_start,
+        STRFTIME(CAST(order_date AS DATE), '%Y-W%W') AS week_label,
+        product_name,
+        category,
+        quantity,
+        unit_price,
+        revenue,
+        city,
+        is_returned,
+        COALESCE(return_reason, 'No Return')         AS return_reason,
+        status,
+        CASE WHEN status = 'cancelled' THEN 1 ELSE 0 END AS is_cancelled
+    FROM source
+    WHERE order_id IS NOT NULL
+)
+
+SELECT * FROM cleaned
+  );
+
+[0m11:48:35.303234 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:48:35.308737 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_project.stg_orders"
+[0m11:48:35.308737 [debug] [Thread-1 (]: On model.dbt_project.stg_orders: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.stg_orders"} */
+alter view "ecom"."main"."stg_orders__dbt_tmp" rename to "stg_orders"
+[0m11:48:35.312088 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m11:48:35.322124 [debug] [Thread-1 (]: On model.dbt_project.stg_orders: COMMIT
+[0m11:48:35.322124 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_project.stg_orders"
+[0m11:48:35.322124 [debug] [Thread-1 (]: On model.dbt_project.stg_orders: COMMIT
+[0m11:48:35.325061 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m11:48:35.330619 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_project.stg_orders"
+[0m11:48:35.332626 [debug] [Thread-1 (]: On model.dbt_project.stg_orders: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.stg_orders"} */
+
+      drop view if exists "ecom"."main"."stg_orders__dbt_backup" cascade
+    
+[0m11:48:35.332626 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m11:48:35.334633 [debug] [Thread-1 (]: On model.dbt_project.stg_orders: Close
+[0m11:48:35.336641 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'caec758e-345c-4602-ac84-291ada4fcbfd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FDF8F807D0>]}
+[0m11:48:35.336641 [info ] [Thread-1 (]: 1 of 3 OK created sql view model main.stg_orders ............................... [[32mOK[0m in 0.09s]
+[0m11:48:35.336641 [debug] [Thread-1 (]: Finished running node model.dbt_project.stg_orders
+[0m11:48:35.340964 [debug] [Thread-1 (]: Began running node model.dbt_project.weekly_metrics
+[0m11:48:35.341696 [info ] [Thread-1 (]: 2 of 3 START sql table model main.weekly_metrics ............................... [RUN]
+[0m11:48:35.342001 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project.stg_orders, now model.dbt_project.weekly_metrics)
+[0m11:48:35.342001 [debug] [Thread-1 (]: Began compiling node model.dbt_project.weekly_metrics
+[0m11:48:35.342001 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project.weekly_metrics"
+[0m11:48:35.342001 [debug] [Thread-1 (]: Began executing node model.dbt_project.weekly_metrics
+[0m11:48:35.364298 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_project.weekly_metrics"
+[0m11:48:35.364298 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_project.weekly_metrics"
+[0m11:48:35.364298 [debug] [Thread-1 (]: On model.dbt_project.weekly_metrics: BEGIN
+[0m11:48:35.364298 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:48:35.364298 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:48:35.364298 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_project.weekly_metrics"
+[0m11:48:35.364298 [debug] [Thread-1 (]: On model.dbt_project.weekly_metrics: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.weekly_metrics"} */
+
+  
+    
+    
+
+    create  table
+      "ecom"."main"."weekly_metrics__dbt_tmp"
+  
+    as (
+      WITH orders AS (
+    SELECT * FROM "ecom"."main"."stg_orders"
+),
+
+weekly AS (
+    SELECT
+        week_label,
+        week_start,
+        COUNT(order_id)                                     AS total_orders,
+        SUM(revenue)                                        AS total_revenue,
+        ROUND(AVG(revenue), 2)                              AS avg_order_value,
+        SUM(CASE WHEN is_returned THEN 1 ELSE 0 END)       AS total_returns,
+        ROUND(
+            SUM(CASE WHEN is_returned THEN 1 ELSE 0 END) * 100.0
+            / COUNT(order_id), 2
+        )                                                   AS return_rate_pct,
+        SUM(CASE WHEN is_cancelled = 1 THEN 1 ELSE 0 END)  AS total_cancellations,
+        ROUND(
+            SUM(CASE WHEN is_cancelled = 1 THEN 1 ELSE 0 END) * 100.0
+            / COUNT(order_id), 2
+        )                                                   AS cancellation_rate_pct
+    FROM orders
+    GROUP BY week_label, week_start
+),
+
+with_growth AS (
+    SELECT
+        week_label,
+        week_start,
+        total_orders,
+        total_revenue,
+        avg_order_value,
+        total_returns,
+        return_rate_pct,
+        total_cancellations,
+        cancellation_rate_pct,
+        LAG(total_revenue) OVER (ORDER BY week_start)      AS prev_week_revenue,
+        ROUND(
+            (total_revenue - LAG(total_revenue) OVER (ORDER BY week_start))
+            * 100.0
+            / NULLIF(LAG(total_revenue) OVER (ORDER BY week_start), 0),
+        2)                                                  AS revenue_wow_growth_pct
+    FROM weekly
+)
+
+SELECT * FROM with_growth
+ORDER BY week_start
+    );
+  
+  
+[0m11:48:35.392682 [debug] [Thread-1 (]: SQL status: OK in 0.031 seconds
+[0m11:48:35.406015 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_project.weekly_metrics"
+[0m11:48:35.406015 [debug] [Thread-1 (]: On model.dbt_project.weekly_metrics: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.weekly_metrics"} */
+alter table "ecom"."main"."weekly_metrics__dbt_tmp" rename to "weekly_metrics"
+[0m11:48:35.406015 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m11:48:35.408404 [debug] [Thread-1 (]: On model.dbt_project.weekly_metrics: COMMIT
+[0m11:48:35.408404 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_project.weekly_metrics"
+[0m11:48:35.408404 [debug] [Thread-1 (]: On model.dbt_project.weekly_metrics: COMMIT
+[0m11:48:35.408404 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:48:35.408404 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_project.weekly_metrics"
+[0m11:48:35.408404 [debug] [Thread-1 (]: On model.dbt_project.weekly_metrics: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.weekly_metrics"} */
+
+      drop table if exists "ecom"."main"."weekly_metrics__dbt_backup" cascade
+    
+[0m11:48:35.408404 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m11:48:35.408404 [debug] [Thread-1 (]: On model.dbt_project.weekly_metrics: Close
+[0m11:48:35.408404 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'caec758e-345c-4602-ac84-291ada4fcbfd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FDF8F760D0>]}
+[0m11:48:35.408404 [info ] [Thread-1 (]: 2 of 3 OK created sql table model main.weekly_metrics .......................... [[32mOK[0m in 0.07s]
+[0m11:48:35.408404 [debug] [Thread-1 (]: Finished running node model.dbt_project.weekly_metrics
+[0m11:48:35.408404 [debug] [Thread-1 (]: Began running node model.dbt_project.weekly_top_category
+[0m11:48:35.423926 [info ] [Thread-1 (]: 3 of 3 START sql table model main.weekly_top_category .......................... [RUN]
+[0m11:48:35.424974 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_project.weekly_metrics, now model.dbt_project.weekly_top_category)
+[0m11:48:35.424974 [debug] [Thread-1 (]: Began compiling node model.dbt_project.weekly_top_category
+[0m11:48:35.427020 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_project.weekly_top_category"
+[0m11:48:35.427020 [debug] [Thread-1 (]: Began executing node model.dbt_project.weekly_top_category
+[0m11:48:35.427020 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_project.weekly_top_category"
+[0m11:48:35.427020 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_project.weekly_top_category"
+[0m11:48:35.427020 [debug] [Thread-1 (]: On model.dbt_project.weekly_top_category: BEGIN
+[0m11:48:35.427020 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:48:35.427020 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:48:35.427020 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_project.weekly_top_category"
+[0m11:48:35.427020 [debug] [Thread-1 (]: On model.dbt_project.weekly_top_category: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.weekly_top_category"} */
+
+  
+    
+    
+
+    create  table
+      "ecom"."main"."weekly_top_category__dbt_tmp"
+  
+    as (
+      WITH orders AS (
+    SELECT * FROM "ecom"."main"."stg_orders"
+),
+
+category_weekly AS (
+    SELECT
+        week_label,
+        week_start,
+        category,
+        SUM(revenue)    AS category_revenue,
+        COUNT(order_id) AS category_orders
+    FROM orders
+    GROUP BY week_label, week_start, category
+),
+
+ranked AS (
+    SELECT
+        week_label,
+        week_start,
+        category,
+        category_revenue,
+        category_orders,
+        ROW_NUMBER() OVER (
+            PARTITION BY week_label
+            ORDER BY category_revenue DESC
+        ) AS rank
+    FROM category_weekly
+)
+
+SELECT
+    week_label,
+    week_start,
+    category        AS top_category,
+    category_revenue AS top_category_revenue,
+    category_orders  AS top_category_orders
+FROM ranked
+WHERE rank = 1
+ORDER BY week_start
+    );
+  
+  
+[0m11:48:35.446795 [debug] [Thread-1 (]: SQL status: OK in 0.016 seconds
+[0m11:48:35.446795 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_project.weekly_top_category"
+[0m11:48:35.446795 [debug] [Thread-1 (]: On model.dbt_project.weekly_top_category: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.weekly_top_category"} */
+alter table "ecom"."main"."weekly_top_category__dbt_tmp" rename to "weekly_top_category"
+[0m11:48:35.458420 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m11:48:35.459768 [debug] [Thread-1 (]: On model.dbt_project.weekly_top_category: COMMIT
+[0m11:48:35.459768 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_project.weekly_top_category"
+[0m11:48:35.459768 [debug] [Thread-1 (]: On model.dbt_project.weekly_top_category: COMMIT
+[0m11:48:35.459768 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:48:35.466966 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_project.weekly_top_category"
+[0m11:48:35.466966 [debug] [Thread-1 (]: On model.dbt_project.weekly_top_category: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbt_project", "target_name": "dev", "node_id": "model.dbt_project.weekly_top_category"} */
+
+      drop table if exists "ecom"."main"."weekly_top_category__dbt_backup" cascade
+    
+[0m11:48:35.466966 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m11:48:35.468974 [debug] [Thread-1 (]: On model.dbt_project.weekly_top_category: Close
+[0m11:48:35.470981 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'caec758e-345c-4602-ac84-291ada4fcbfd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FDF8F96610>]}
+[0m11:48:35.470981 [info ] [Thread-1 (]: 3 of 3 OK created sql table model main.weekly_top_category ..................... [[32mOK[0m in 0.05s]
+[0m11:48:35.470981 [debug] [Thread-1 (]: Finished running node model.dbt_project.weekly_top_category
+[0m11:48:35.472989 [debug] [MainThread]: Using duckdb connection "master"
+[0m11:48:35.472989 [debug] [MainThread]: On master: BEGIN
+[0m11:48:35.475050 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m11:48:35.475404 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m11:48:35.475404 [debug] [MainThread]: On master: COMMIT
+[0m11:48:35.475404 [debug] [MainThread]: Using duckdb connection "master"
+[0m11:48:35.475404 [debug] [MainThread]: On master: COMMIT
+[0m11:48:35.475404 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m11:48:35.475404 [debug] [MainThread]: On master: Close
+[0m11:48:35.475404 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:48:35.475404 [debug] [MainThread]: Connection 'create_ecom_main' was properly closed.
+[0m11:48:35.475404 [debug] [MainThread]: Connection 'list_ecom_main' was properly closed.
+[0m11:48:35.475404 [debug] [MainThread]: Connection 'model.dbt_project.weekly_top_category' was properly closed.
+[0m11:48:35.475404 [info ] [MainThread]: 
+[0m11:48:35.475404 [info ] [MainThread]: Finished running 2 table models, 1 view model in 0 hours 0 minutes and 0.41 seconds (0.41s).
+[0m11:48:35.475404 [debug] [MainThread]: Command end result
+[0m11:48:35.509451 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\sunandha\Downloads\gitdemo\ecom-analyst-copilot\dbt_project\target\manifest.json
+[0m11:48:35.512457 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\sunandha\Downloads\gitdemo\ecom-analyst-copilot\dbt_project\target\semantic_manifest.json
+[0m11:48:35.514800 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\sunandha\Downloads\gitdemo\ecom-analyst-copilot\dbt_project\target\run_results.json
+[0m11:48:35.514800 [info ] [MainThread]: 
+[0m11:48:35.514800 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:48:35.514800 [info ] [MainThread]: 
+[0m11:48:35.514800 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+[0m11:48:35.514800 [debug] [MainThread]: Command `dbt run` succeeded at 11:48:35.514800 after 5.20 seconds
+[0m11:48:35.514800 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FDF837DE90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FDF837F310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FDEF79F710>]}
+[0m11:48:35.523609 [debug] [MainThread]: Flushing usage events
+[0m11:48:36.844226 [debug] [MainThread]: An error was encountered while trying to flush usage events
