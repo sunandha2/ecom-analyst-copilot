@@ -1,0 +1,8 @@
+pandas
+faker
+duckdb
+dbt-duckdb
+anthropic
+streamlit
+plotly
+python-dotenv
