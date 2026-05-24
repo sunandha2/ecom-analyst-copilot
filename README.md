@@ -35,7 +35,7 @@ This project automates that entire workflow.
 ## Progress
 - [x] Day 1 — Project setup + dataset generated
 - [x] Day 2 — DuckDB + dbt pipeline (PASS=3, 53 weeks of metrics)
-- [ ] Day 3 — Claude API integration + insight generation
+- [x] Day 3 — Groq LLM + RAG generating analyst insights — 8 anomalies auto-detected
 - [ ] Day 4 — RAG layer + business context
 - [ ] Day 5 — Auto report drafting + anomaly flags
 - [ ] Day 6 — Streamlit app + deployment
