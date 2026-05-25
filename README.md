@@ -1,4 +1,4 @@
-# E-Commerce Analyst Co-Pilot 
+# E-Commerce Analyst Co-Pilot 🤖
 
 > An LLM-powered system that reads your business data 
 > and writes the weekly analyst report automatically.
@@ -11,37 +11,54 @@ This project automates that entire workflow.
 ## What It Does
 -  Ingests raw e-commerce data (orders, customers, returns)
 -  Transforms it into clean weekly metrics using dbt + DuckDB
--  Uses Claude API + RAG to read metrics and generate insights
--  Auto-drafts a weekly analyst report a human just edits and sends
--  Serves everything through a live Streamlit app
+-  Uses Groq (Llama 3.3) + RAG to read metrics and generate insights
+-  Auto-detects anomalies using rule-based thresholds
+-  Auto-drafts weekly analyst insights a human just edits and sends
+- Serves everything through a live 3-page Streamlit app
+
+## Live Demo
+🔗 *(deploying Day 5 — link coming soon)*
 
 ## Architecture
+Raw CSVs → DuckDB → dbt models → weekly_metrics table
+↓
+Groq LLM + RAG context
+(business definitions)
+↓
+Auto-drafted weekly insights
++ anomaly detection + flags
+↓
+3-page Streamlit app (live)
+Weekly Dashboard | AI Report | Anomaly Explorer
 ## Tech Stack
 | Layer | Tool |
 |---|---|
 | Data storage | DuckDB |
-| Transformation | dbt |
-| LLM | Claude API (Anthropic) |
+| Transformation | dbt (PASS=3) |
+| LLM | Groq API (Llama 3.3) |
 | Context layer | RAG over metric definitions |
+| Anomaly detection | Rule-based thresholds |
 | App | Streamlit |
 | Language | Python |
 
 ## Dataset
-- 3,000 orders across 52 weeks (2024)
+- 3,000 orders across 53 weeks (2024)
 - 500 customers across 7 Indian cities
 - 5 product categories
 - Generated with realistic seasonality and return patterns
 
+## Results
+-  53 weeks of clean metrics built via dbt pipeline
+-  8 anomalies auto-detected (revenue drops, return spikes)
+-  LLM generates 3-sentence analyst insight per week
+-  Live 3-page Streamlit dashboard deployed
+
 ## Progress
-- [x] Day 1 — Project setup + dataset generated
+- [x] Day 1 — Project setup + 3,000 row dataset generated
 - [x] Day 2 — DuckDB + dbt pipeline (PASS=3, 53 weeks of metrics)
 - [x] Day 3 — Groq LLM + RAG generating analyst insights — 8 anomalies auto-detected
-- [ ] Day 4 — RAG layer + business context
-- [ ] Day 5 — Auto report drafting + anomaly flags
-- [ ] Day 6 — Streamlit app + deployment
-
-## Results
-*(updating daily as project completes)*
+- [x] Day 4 — 3-page Streamlit app built (Dashboard + AI Report + Anomaly Explorer)
+- [ ] Day 5 — Deployment + resume bullet
 
 ## How to Run
 ```bash
@@ -51,8 +68,14 @@ python -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt
 cd dbt_project && dbt run
+cd .. && streamlit run app/main.py
 ```
 
+## What the App Shows
+- **Weekly Dashboard** — revenue trend, return rate, WoW growth, top category
+- **AI Report** — LLM-generated analyst insight per week with anomaly flags
+- **Anomaly Explorer** — all 8 anomaly weeks with expandable AI insights
+
 ## Author
-Built as a portfolio project to demonstrate end-to-end 
+Built as a portfolio project demonstrating end-to-end 
 analytics engineering + LLM integration skills.
