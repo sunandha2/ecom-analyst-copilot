@@ -17,7 +17,7 @@ This project automates that entire workflow.
 - Serves everything through a live 3-page Streamlit app
 
 ## Live Demo
-🔗 *(deploying Day 5 — link coming soon)*
+🔗  https://ecom-analyst-copilot-btgogthe3iv4ekzmn3moan.streamlit.app/
 
 ## Architecture
 Raw CSVs → DuckDB → dbt models → weekly_metrics table
@@ -58,7 +58,7 @@ Weekly Dashboard | AI Report | Anomaly Explorer
 - [x] Day 2 — DuckDB + dbt pipeline (PASS=3, 53 weeks of metrics)
 - [x] Day 3 — Groq LLM + RAG generating analyst insights — 8 anomalies auto-detected
 - [x] Day 4 — 3-page Streamlit app built (Dashboard + AI Report + Anomaly Explorer)
-- [ ] Day 5 — Deployment + resume bullet
+- [x] Day 5 — Deployed live on Streamlit Cloud
 
 ## How to Run
 ```bash
