@@ -1,4 +1,4 @@
-# E-Commerce Analyst Co-Pilot 🤖
+# E-Commerce Analyst Co-Pilot 
 
 > An LLM-powered system that reads your business data 
 > and writes the weekly analyst report automatically.
@@ -17,7 +17,7 @@ This project automates that entire workflow.
 - Serves everything through a live 3-page Streamlit app
 
 ## Live Demo
-🔗  https://ecom-analyst-copilot-btgogthe3iv4ekzmn3moan.streamlit.app/
+🔗 https://ecom-analyst-copilot-btgogthe3iv4ekzmn3moan.streamlit.app/
 
 ## Architecture
 Raw CSVs → DuckDB → dbt models → weekly_metrics table
@@ -62,7 +62,7 @@ Weekly Dashboard | AI Report | Anomaly Explorer
 
 ## How to Run
 ```bash
-git clone https://github.com/YOUR_USERNAME/ecom-analyst-copilot
+git clone https://github.com/sunandha2/ecom-analyst-copilot
 cd ecom-analyst-copilot
 python -m venv venv
 venv\Scripts\activate
