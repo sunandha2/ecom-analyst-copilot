@@ -3,11 +3,10 @@
 > An LLM-powered system that reads your business data 
 > and writes the weekly analyst report automatically.
 
-<img width="1810" height="792" alt="image" src="https://github.com/user-attachments/assets/dce5b66d-0346-4848-b771-fecf067bbc31" />
-<img width="1806" height="793" alt="image" src="https://github.com/user-attachments/assets/7a07eac8-eb23-41ec-8cc1-6c56cbfc6000" />
-<img width="1815" height="652" alt="image" src="https://github.com/user-attachments/assets/992b4c59-2ac5-4f16-8406-1f8f4b40c649" />
-<img width="1878" height="720" alt="image" src="https://github.com/user-attachments/assets/b8462eb7-67d9-46d7-a2c1-6ad382e03230" />
 
+ <img width="1856" height="805" alt="image" src="https://github.com/user-attachments/assets/039f9235-17cd-4f54-a716-840a4242d2d3" />
+ <img width="1813" height="783" alt="image" src="https://github.com/user-attachments/assets/b49356ab-bad3-459a-bfa0-aeeffb837586" />
+ <img width="1844" height="818" alt="image" src="https://github.com/user-attachments/assets/3095c683-8c4f-4089-83d8-db3834bdce1b" />
 
 
 ## The Problem
